@@ -220,6 +220,8 @@ fun CardMinimalExample() {
 @Preview(showBackground = true)
 @Composable
 fun TopAppBarExamplePreview() {
+    var selectedItem by remember { mutableIntStateOf(0) }
+    val items = listOf("Songs", "Artists", "Playlists")
     AppGaleryArtTheme {
         ScaffoldLayout()
     }
